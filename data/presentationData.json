@@ -1,0 +1,59 @@
+{
+
+  "presentationData": {
+
+    "params": {
+
+      "primaryColor": "#FE4F00",
+      "secondaryColor": "#FF7739",
+      "tertiaryColor": "#FF9D71",
+      "backgroundColor": "black"
+
+    },
+
+    "xl": {
+
+      "header": {
+
+        "paper": {
+
+          "id": "presentationHeader",
+          "width": 1740,
+          "height": 150
+
+        },
+
+        "objShape": {
+
+          "path" : {
+
+            "coord": "M 1740,0 L 1740,150 L 0,150 L 0,70 L 990,70 L 1010,45",
+            "color": 
+
+          }
+
+        },
+
+        "objText": {
+
+          "title": {
+
+            "x": 875,
+            "y": 45,
+            "text": "Presentation",
+            "color": "#FE4F00",
+            "sWidth": "1",
+            "fSize": "40",
+            "fFamily": "Clip"
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

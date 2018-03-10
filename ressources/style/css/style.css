@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Clip";
+  src: url("../fonts/Clip.eot?") format("eot"), url("../fonts/Clip.woff2") format("woff2"), url("../fonts/Clip.woff") format("woff"), url("../fonts/Clip.ttf") format("truetype"), url("../fonts/Clip.svg#Clip") format("svg"); }
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Regular.eot?") format("eot"), url("../fonts/Orbitron-Regular.woff2") format("woff2"), url("../fonts/Orbitron-Regular.woff") format("woff"), url("../fonts/Orbitron-Regular.ttf") format("truetype"), url("../fonts/Orbitron-Regular.svg#Orbitron") format("svg"); }
+@font-face {
+  font-family: "Jura";
+  src: url("../fonts/Jura-Regular.eot?") format("eot"), url("../fonts/Jura-Regular.woff2") format("woff2"), url("../fonts/Jura-Regular.woff") format("woff"), url("../fonts/Jura-Regular.ttf") format("truetype"), url("../fonts/Jura-Regular.svg#Jura") format("svg"); }
+/*Color*/
+/*KeyFrames*/
+@keyframes flash {
+  0% {
+    opacity: .1; }
+  4% {
+    opacity: 1; }
+  8% {
+    opacity: .4; }
+  12% {
+    opacity: .1; }
+  16% {
+    opacity: .5; }
+  20% {
+    opacity: 1; }
+  24% {
+    opacity: .4; }
+  28% {
+    opacity: .1; }
+  32% {
+    opacity: .6; }
+  36% {
+    opacity: 1; }
+  40% {
+    opacity: .7; }
+  44% {
+    opacity: .2; }
+  48% {
+    opacity: .1; }
+  52% {
+    opacity: .4; }
+  56% {
+    opacity: .9; }
+  60% {
+    opacity: .2; }
+  64% {
+    opacity: 1; }
+  68% {
+    opacity: .4; }
+  72% {
+    opacity: .1; }
+  76% {
+    opacity: .5; }
+  80% {
+    opacity: .7; }
+  84% {
+    opacity: .9; }
+  88% {
+    opacity: .6; }
+  92% {
+    opacity: .8; }
+  96% {
+    opacity: .2; }
+  100% {
+    opacity: 0.9; } }
+@keyframes drawText {
+  to {
+    stroke-dashoffset: 0; } }
+/*General*/
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0 auto;
+  background-color: #16161D; }
+
+a {
+  text-decoration: none; }
+
+/*HomePage*/
+.homeMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  padding-right: 3vw; }
+  .homeMain section {
+    /*Bloc Realisation et Contact*/
+    /*Bloc Presentation et Projets*/
+    /*Bloc Presentation et Realisation*/ }
+    .homeMain section :nth-child(even) {
+      margin-right: 2vw; }
+    .homeMain section :nth-child(odd) {
+      margin-left: 2vw; }
+    .homeMain section :first-of-type, .homeMain section :nth-of-type(2) {
+      margin-bottom: 4vh; }
+    .homeMain section #presentation > svg:hover {
+      box-shadow: 0 0 30px rgba(255, 146, 97, 0.4), inset 0 0 30px rgba(255, 146, 97, 0.4);
+      text-shadow: 0 0 80px rgba(255, 146, 97, 0.4);
+      animation: flash 1s linear forwards; }
+      .homeMain section #presentation > svg:hover text {
+        fill: #FF9261; }
+    .homeMain section #realisation > svg:hover {
+      box-shadow: 0 0 30px rgba(229, 194, 252, 0.4), inset 0 0 30px rgba(229, 194, 252, 0.4);
+      text-shadow: 0 0 50px rgba(229, 194, 252, 0.4);
+      animation: flash 1s linear forwards; }
+      .homeMain section #realisation > svg:hover text {
+        fill: #D9A4FC; }
+    .homeMain section #project > svg:hover {
+      box-shadow: 0 0 30px rgba(254, 142, 170, 0.4), inset 0 0 30px rgba(254, 142, 170, 0.4);
+      text-shadow: 0 0 50px rgba(254, 142, 170, 0.4);
+      animation: flash 1s linear forwards; }
+      .homeMain section #project > svg:hover text {
+        fill: #FE003E; }
+    .homeMain section #contact > svg:hover {
+      box-shadow: 0 0 30px rgba(255, 202, 94, 0.4), inset 0 0 30px rgba(255, 202, 94, 0.4);
+      text-shadow: 0 0 50px rgba(255, 202, 94, 0.4);
+      animation: flash 1s linear forwards; }
+      .homeMain section #contact > svg:hover text {
+        fill: #FFB41D; }
+
+/*Presentation Page*/
+.presentationMain {
+  text-align: center;
+  padding-top: 5vh; }
+  .presentationMain #presentationSkill, .presentationMain #presentationInfo {
+    margin-top: -5px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,197 @@
+@import "_font.scss";
+@include font-face(Clip, '../fonts/Clip');
+@include font-face(Orbitron, '../fonts/Orbitron-Regular');
+@include font-face(Jura, '../fonts/Jura-Regular');
+
+/*Color*/
+
+$bgcolor: #16161D;
+$welcomeColor: rgba(214, 201, 201, 1);
+$welcomeColorNeon:#BFB0B0;
+$presentationColor: #FE4F00;
+$presentationColorNeon: rgba(255, 146, 97, 0.4);
+$presentationColorText: #FF9261;
+$realisationColor: #D9A4FC;
+$realisationColorNeon: rgba(229, 194, 252, 0.4);
+$projectsColor: #FE003E;
+$projectsColorNeon: rgba(254, 142, 170, 0.4);
+$contactColor: #FFB41D;
+$contactColorNeon: rgba(255, 202, 94, 0.4);
+
+/*KeyFrames*/
+
+@keyframes flash {
+
+  0% { opacity: .1; }
+  4% { opacity: 1; }
+  8% { opacity: .4; }
+  12% { opacity: .1; }
+  16% { opacity: .5; }
+  20% { opacity: 1; }
+  24% { opacity: .4; }
+  28% { opacity: .1; }
+  32% { opacity: .6; }
+  36% { opacity: 1; }
+  40% { opacity: .7; }
+  44% { opacity: .2; }
+  48% { opacity: .1; }
+  52% { opacity: .4; }
+  56% { opacity: .9; }
+  60% { opacity: .2; }
+  64% { opacity: 1; }
+  68% { opacity: .4; }
+  72% { opacity: .1; }
+  76% { opacity: .5; }
+  80% { opacity: .7; }
+  84% { opacity: .9; }
+  88% { opacity: .6; }
+  92% { opacity: .8; }
+  96% { opacity: .2; }
+  100% { opacity: 0.9; }
+
+}
+
+@keyframes drawText {
+
+  to{ stroke-dashoffset: 0; }
+
+}
+/*General*/
+*{
+
+  box-sizing: border-box;
+
+}
+
+html{
+
+  font-size: 62.5%;
+
+}
+
+body {
+
+  margin: 0 auto;
+  background-color: $bgcolor;
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+/*HomePage*/
+
+.homeMain{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  padding-right: 3vw;
+
+  section{
+
+    /*Bloc Realisation et Contact*/
+    :nth-child(even){
+
+      margin-right: 2vw;
+
+    }
+
+    /*Bloc Presentation et Projets*/
+    :nth-child(odd){
+
+      margin-left: 2vw;
+
+    }
+
+    /*Bloc Presentation et Realisation*/
+    :first-of-type, :nth-of-type(2){
+
+      margin-bottom: 4vh;
+
+    }
+
+    #presentation>svg:hover{
+
+      box-shadow: 0 0 30px $presentationColorNeon, inset 0 0 30px $presentationColorNeon;
+      text-shadow: 0 0 80px $presentationColorNeon;
+
+      animation: flash 1s linear forwards;
+
+      text{
+
+        fill: $presentationColorText;
+
+      }
+
+    }
+
+    #realisation>svg:hover{
+
+      box-shadow: 0 0 30px $realisationColorNeon, inset 0 0 30px $realisationColorNeon;
+      text-shadow: 0 0 50px $realisationColorNeon;
+
+      animation: flash 1s linear forwards;
+
+      text {
+
+        fill: $realisationColor;
+
+      }
+
+    }
+
+    #project>svg:hover{
+
+      box-shadow: 0 0 30px $projectsColorNeon, inset 0 0 30px $projectsColorNeon;
+      text-shadow: 0 0 50px $projectsColorNeon;
+
+      animation: flash 1s linear forwards;
+
+      text{
+
+        fill: $projectsColor;
+
+      }
+
+    }
+
+    #contact>svg:hover{
+
+      box-shadow: 0 0 30px $contactColorNeon, inset 0 0 30px $contactColorNeon;
+      text-shadow: 0 0 50px $contactColorNeon;
+
+      animation: flash 1s linear forwards;
+
+      text{
+
+        fill: $contactColor;
+
+      }
+
+    }
+
+  }
+
+}
+
+/*Presentation Page*/
+.presentationMain{
+
+  text-align: center;
+  padding-top: 5vh;
+
+  #presentationSkill, #presentationInfo {
+
+    margin-top: -5px;
+
+  }
+
+}
